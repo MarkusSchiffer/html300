@@ -1,0 +1,20 @@
+{
+  "name": "html300",
+  "version": "1.0.0",
+  "description": "This repository contains the activities and assignments required to complete the final course of the Front End Certificate program. All assignment submissions and quizzes/discussions will be done through [Canvas](https://canvas.uw.edu/).",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/MarkusSchiffer/html300.git"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/MarkusSchiffer/html300/issues"
+  },
+  "homepage": "https://github.com/MarkusSchiffer/html300#readme"
+}
