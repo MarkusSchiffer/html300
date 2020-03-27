@@ -1,0 +1,65 @@
+@mixin size($occupy: 0) {
+    @if $occupy == 0 {
+        width: 80%;
+    } @else if $occupy == 1 {
+        width: 30%;
+    } @else {
+        width: 50%;
+    }
+}
+
+@mixin format-img($rounded: false) {
+    @if $rounded {
+        img {
+            border-radius: 50%;
+        }
+    }
+}
+
+html {
+    font-family: $text;
+    font-size: 1.5rem;
+    color: $font-color;
+}
+
+body {
+    margin: 0;
+}
+
+main {
+    display: flex;
+    justify-content: center;
+    @include size();
+    background-color: $box-color;
+    padding: 3rem;
+}
+
+div {
+    @include size(0);
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    background-color: white;
+    padding: 1rem;
+    .pic {
+        @include size(1);
+        @include format-img(true);
+        text-align: center;
+        flex-direction: column;
+        img {
+            max-width: 100%;
+            height: auto;
+            display: block;
+        }
+    }
+    .info {
+        @include size(2);
+        @include format-img();
+        background-color: $box-color;
+        flex-direction: column;
+    }
+}
+
+p span {
+    font-weight: bold;
+}
