@@ -3,12 +3,34 @@
         <meta charset="UTF-8" />
         <meta name="viewport" content="width=device-width, initial-scale=1.0" />
         <meta http-equiv="X-UA-Compatible" content="ie=edge" />
-        <link rel="stylesheet" href="css/style.css" />
+        <link rel="stylesheet" href="css/main.css" />
         <title>Assignment 02</title>
     </head>
     <body>
-        <main class="main">
-            <h1>title</h1>
+        <main>
+            <!--main specifies the width of the card, sets the primary background color-->
+            <div class="prim">
+                <!--prim div serves to hold the other two divs correctly, leaving a border and arranging
+                differently depenending on the device the user is using-->
+                <div class="pic">
+                    <!--Creates the white part of the card with Steve's picture, name, and position-->
+                    <img src="./img/unsplash-headshot.jpg" alt="Picture of Steve Smith">
+                    <h1>Steve Smith</h1>
+                    <p><i>Project Manager</i></p>
+                </div>
+                <div class="info">
+                    <!--Creates the gray part of the card with Steve's other information-->
+                    <p><span>Company:</span> Front End Dev Co</p>
+                    <p><span>Experience:</span> 3 years</p>
+                    <p><span>School:</span> UW</p>
+                    <p><span>Major:</span> Marketing</p>
+                    <p><span>Email:</span> steve@fedc.com</p>
+                    <p>
+                        <img src="./img/linkedin.svg" alt="Linkedin logo">
+                         steve.linkedinprofile.com
+                    </p>
+                </div>
+            </div>
         </main>
     </body>
 </html>
